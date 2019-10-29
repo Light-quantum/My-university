@@ -1,4 +1,4 @@
 # My-university
 study in university
 
-some experiments and brush questions, and my own ideas when I studied computer science in college.
+When I was studying computer science in university, I did some experiments and did oj system brush questions, as well as my own ideas
