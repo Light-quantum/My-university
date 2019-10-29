@@ -1,9 +1,9 @@
-//
 // Created by LinSihan on 2019/10/27.
-//
-/*
+/*******************
  * 求素数问题
- */
+ *******************/
+
+
 #include <stdio.h>
 #include <math.h>
 int main(){

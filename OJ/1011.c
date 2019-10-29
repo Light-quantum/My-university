@@ -1,9 +1,8 @@
-//
 // Created by LinSihan on 2019/10/27.
-//
-/*
+/*********************
  * 级数求和问题
- */
+ *********************/
+
 #include <stdio.h>
 int main (){
     double Sn = 0.0;

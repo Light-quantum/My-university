@@ -1,9 +1,8 @@
-//
 // Created by LinSihan on 2019/10/27.
-//
-/*
+/*************
  * 亲密数问题
- */
+ *************/
+
 #include <stdio.h>
 int main(){
     int a, b = 0, c,sum1, sum2;

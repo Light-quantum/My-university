@@ -1,9 +1,8 @@
-//
 // Created by LinSihan on 2019/10/26.
-//
-/*
+/***************
  * 三角形问题
- */
+ **************/
+
 #include <stdio.h>
 int main(){
     int a, b, c;

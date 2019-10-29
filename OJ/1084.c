@@ -1,14 +1,11 @@
-//
 // Created by LinSihan on 2019/10/24.
-//
-
-/*
+/**************************
  * 自守数问题
  * 未解决
  * 已知bug 76的平方无法处理
- */
-# include <stdio.h>
+ **************************/
 
+# include <stdio.h>
 int getAfterNumber(int x);
 int main()
 {

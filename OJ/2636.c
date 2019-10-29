@@ -1,11 +1,9 @@
-//
 // Created by LinSihan on 2019/10/27.
-//
-/*
+/****************
  * 最大公约数问题
- */
-#include <stdio.h>
+ ***************/
 
+#include <stdio.h>
 int main(){
     int a, b, i, divisor;
     scanf("%d %d", &a, &b);

@@ -1,7 +1,7 @@
-/*
+//Created by LinSihan on 2019/10/28.
+/****************
  * 完全数问题
- *
- */
+ ****************/
 
 #include <stdio.h>
 int main(){

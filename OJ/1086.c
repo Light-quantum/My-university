@@ -1,9 +1,8 @@
-//
-// Created by LinSihan on 2019/10/28.
-//
-/*
- * 舍罕王的失算，麦子放64格
- */
+//Created by LinSihan on 2019/10/28.
+/************************
+ * 舍罕王的失算
+ ************************/
+
 #include <stdio.h>
 int main(){
     int i, a = 1;

@@ -1,9 +1,9 @@
-/*
+//Created by LinSihan on 2019/10/28.
+/*********************
  * 亲和数问题
- */
+ *********************/
 
 #include <stdio.h>
-
 int main()
 {
     int m, i, j;

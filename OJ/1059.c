@@ -1,9 +1,8 @@
-//
 // Created by LinSihan on 2019/10/27.
-//
-/*
+/*************************
  * 水仙花数问题1
- */
+ ************************/
+
 #include <stdio.h>
 int main(){
     int n,judge;

@@ -1,11 +1,9 @@
-//
 // Created by LinSihan on 2019/10/24.
-//
-# include<stdio.h>
-/*
+/*******************
  * 8除不尽的数
- */
+ ******************/
 
+# include<stdio.h>
 int main ()
 {
     int n = 0;
