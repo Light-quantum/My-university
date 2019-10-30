@@ -18,11 +18,14 @@
 
 int main(){
     int year, month, days, w;
-    scanf("%d %d", &year, &month); //输入年，月
+    printf("请输入您想查询的年月(格式为yyyy-mm): ");
+    scanf("%d-%d", &year, &month); //输入年，月
+    printf("\n ");
 
-    days = getDays(month, year); //获得该月天数
+    days = getDays(year, month); //获得该月天数
     w = getWeek(year, month); //使用蔡勒公式计算该月1号是星期几
 
+    printf("%4d年%2d月日历如下:\n\n", year, month);
     getCalendar(w, days); //打印出日历
     return 0;
 }
