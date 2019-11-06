@@ -92,9 +92,10 @@ int getWeek(int year, int month) {
     输出：打印出日历
                                     by SihanLin 19-10-30 10:59
 *************************************************************/
-int getCalendar(int w, int days){
+int getCalendar(int w, int days, int year, int month){
     int w1;
     w1 = w;
+    printf("---------------万年历（%4d年%2d月）------------------------\n\n", year, month);
     printf("日\t一\t二\t三\t 四\t 五\t 六\n");
     printf("\n ");
     while(w1--){
@@ -102,13 +103,15 @@ int getCalendar(int w, int days){
     }
     int i, j;
     for(i = 1; i <= days; i++){
-        printf("%d\t", i);
+        printf("%2d\t", i);
         j = i + w;
         if(j % 7 == 0){
             printf("\n ");
             printf("\n ");
         }
     }
-    printf("\n ");
+    printf("\n");
+    printf("----------------------------------------------------\n");
+    printf("按上下箭头切换年份，按左右箭头切换月份（Esc退出）");
     return 1;
 }

@@ -16,6 +16,7 @@ int main(){
         for(j = 2; j <= k; j++){
             if(i % j == 0) {
                 prime = 0;
+                break;
             }
         }
         if (prime == 1){

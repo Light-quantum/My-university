@@ -14,18 +14,51 @@
 // 逢周六换行
 
 #include <stdio.h>
+#include <time.h>
+#include <conio.h>
+#include <stdlib.h>
 #include "util.h"
 
 int main(){
-    int year, month, days, w;
-    printf("请输入您想查询的年月(格式为yyyy-mm): ");
-    scanf("%d-%d", &year, &month); //输入年，月
-    printf("\n ");
+    int year, month, days, w, c;
 
-    days = getDays(year, month); //获得该月天数
-    w = getWeek(year, month); //使用蔡勒公式计算该月1号是星期几
+    time_t nowtime;
+    struct tm *timeinfo;
+    time( &nowtime ); //获取当前时间
+    timeinfo = localtime( &nowtime ); //转为当地时间
+    year = timeinfo->tm_year + 1900; //从1900年开始算起
+    month = timeinfo->tm_mon + 1;
 
-    printf("%4d年%2d月日历如下:\n\n", year, month);
-    getCalendar(w, days); //打印出日历
+    do{
+        days = getDays(year, month); //获得该月天数
+        w = getWeek(year, month); //使用蔡勒公式计算该月1号是星期几
+        getCalendar(w, days, year, month); //打印出日历
+        c = getch();
+        if(c == 75 ){
+            if(month == 1){
+                month = 12;
+                year = year - 1;
+            }
+            else
+                month = month - 1;
+        }
+        else if(c == 77){
+            if(month == 12){
+                month = 1;
+                year = year + 1;
+            }
+            else
+                month = month + 1;
+        }
+
+        else if(c == 72){
+            year = year - 1;
+        }
+        else if(c == 80){
+            year = year + 1;
+        }
+        system("cls");
+
+    }while(c != 27);
     return 0;
 }
